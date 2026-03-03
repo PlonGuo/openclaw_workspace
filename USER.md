@@ -2,13 +2,15 @@
 
 - **Name:** Jason
 - **What to call them:** Jason
-- **Pronouns:** _(not specified)_
+- **Pronouns:** he/him
 - **Timezone:** America/Los_Angeles (US/California)
-- **Notes:**
+- **Location:** Northeastern University, US — graduate student
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- Grad student. Currently focused on finding a summer internship, grinding LeetCode.
+- Likes gaming, coding, and following new AI tech.
+- Uses 过神 as a general-purpose personal assistant — news, writing, research, random errands. The scope grows organically as new needs come up.
 
 ---
 

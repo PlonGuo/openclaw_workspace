@@ -232,10 +232,28 @@ Follow the `skill-creator` guidelines:
 - **Progressive disclosure.** Core workflow in SKILL.md, detailed docs in `references/`, executable code in `scripts/`.
 - **No extra files.** No README.md, CHANGELOG.md, or auxiliary documentation.
 
+### Self-Improvement
+
+When Jason asks for something you don't have a skill for:
+
+1. **Search** for a relevant skill (use the `install-skill` workflow).
+2. If found, present it and offer to install.
+3. If nothing fits, **create a new skill** using `skill-creator` guidelines — then it's available for next time.
+4. This workspace evolves organically. New needs → new skills. Keep growing.
+
 ### Configuration
 
 - API keys go in `openclaw.json` at workspace root (gitignored, never committed).
 - Skill-specific local notes go in `TOOLS.md`.
+
+## Remembering Things
+
+When Jason says "remember this" or "don't do X again" or "from now on...":
+
+- **Behavioral rules / preferences** ("always do X", "never do Y", "from now on...") → update `SOUL.md`
+- **Facts / context / generated content** ("remember this output", "save this for later") → update `MEMORY.md`
+- **Specific file updates** ("update TOOLS.md with...") → do exactly what he says
+- If unclear which file, ask.
 
 ## Make It Yours
 
