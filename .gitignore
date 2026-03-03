@@ -1,4 +1,5 @@
 .env
+openclaw.json
 .firecrawl/
 __pycache__/
 *.pyc

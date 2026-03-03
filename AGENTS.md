@@ -207,6 +207,36 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Skill Management
+
+### Installing Skills
+
+When the user asks to find or install skills from ClawHub, skills.sh, or GitHub:
+
+1. **Search** — try in order: `clawhub search "<query>"` → `npx skills find "<query>"` → firecrawl fallback (scrape clawhub.com or GitHub)
+2. **Show before install.** Present what you found: skill name, description, source, link. Never auto-install.
+3. **Wait for approval.** Ask which one(s) to install. Do not proceed without explicit confirmation.
+4. **Install to workspace `skills/` only.** Don't use `-g` (global). Keep the workspace self-contained.
+5. **Don't overwrite.** If a skill with the same name already exists, tell the user and ask.
+6. **Verify.** Confirm `skills/<name>/SKILL.md` exists after installation.
+7. **Preview.** Read the installed SKILL.md and summarize: what it does, what it requires (env vars, binaries).
+8. **Log it.** Write to `memory/YYYY-MM-DD.md`: skill name, source, what it does.
+
+### Writing Skills
+
+Follow the `skill-creator` guidelines:
+
+- **Description is the trigger.** Put all "when to use" info in the frontmatter `description` — the body only loads after triggering.
+- **Concise body.** Only add what the agent doesn't already know. Under 500 lines.
+- **Imperative style.** Use infinitive/imperative form in instructions.
+- **Progressive disclosure.** Core workflow in SKILL.md, detailed docs in `references/`, executable code in `scripts/`.
+- **No extra files.** No README.md, CHANGELOG.md, or auxiliary documentation.
+
+### Configuration
+
+- API keys go in `openclaw.json` at workspace root (gitignored, never committed).
+- Skill-specific local notes go in `TOOLS.md`.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
