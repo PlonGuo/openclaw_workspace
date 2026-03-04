@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1772611039326
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1772621489554
+    },
+    "firecrawl-skills": {
+      "version": "1.0.0",
+      "installedAt": 1772622673493
+    },
+    "firecrawl-search": {
+      "version": "1.0.0",
+      "installedAt": 1772622677802
+    },
+    "firecrawler": {
+      "version": "1.0.0",
+      "installedAt": 1772622682501
+    }
+  }
+}

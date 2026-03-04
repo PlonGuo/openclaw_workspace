@@ -125,6 +125,10 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
 - **WhatsApp:** No headers — use **bold** or CAPS for emphasis
 
+## Progress Reporting
+
+If a task takes longer than 1 minute, report progress every 1 minute. Keep updates brief — what you just finished, what you're doing next.
+
 ## Heartbeats
 
 When you receive a heartbeat poll, read `HEARTBEAT.md`. If it has tasks, do them. If it's empty, reply `HEARTBEAT_OK`.
