@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "csv-data-summarizer": {
+      "source": "coffeefuelbump/csv-data-summarizer-claude-skill",
+      "sourceType": "github",
+      "computedHash": "691551a714511f24b1e7c2a993b1323210a0ad2acd51b239bfa609a298fc1876"
+    },
+    "csv-excel-merger": {
+      "source": "onewave-ai/claude-skills",
+      "sourceType": "github",
+      "computedHash": "5da17e4406ccee23cc02c9a8c27d45d28679753ef8ee7d653c77e4402d7d4ae7"
+    },
+    "xlsx": {
+      "source": "rysweet/amplihack",
+      "sourceType": "github",
+      "computedHash": "dc85f2bb3952070f49c51bb878e2479d07c74badaae2d9fa509763c26c91f782"
+    }
+  }
+}

@@ -147,16 +147,24 @@ When you receive a heartbeat poll, read `HEARTBEAT.md`. If it has tasks, do them
 
 ### Installing Skills
 
-When the user asks to find or install skills from ClawHub, skills.sh, or GitHub:
+**Two skill locations exist — both are valid:**
+- `skills/` — workspace skills, manually created or maintained (firecrawl-scraper, install-skill, etc.)
+- `.agents/skills/` + `skills-lock.json` — framework-managed skills installed via `clawhub install`
 
-1. **Search** — try in order: `clawhub search "<query>"` → `npx skills find "<query>"` → firecrawl fallback (scrape clawhub.com or GitHub)
-2. **Show before install.** Present what you found: skill name, description, source, link. Never auto-install.
-3. **Wait for approval.** Ask which one(s) to install. Do not proceed without explicit confirmation.
-4. **Install to workspace `skills/` only.** Don't use `-g` (global). Keep the workspace self-contained.
-5. **Don't overwrite.** If a skill with the same name already exists, tell the user and ask.
-6. **Verify.** Confirm `skills/<name>/SKILL.md` exists after installation.
-7. **Preview.** Read the installed SKILL.md and summarize: what it does, what it requires (env vars, binaries).
-8. **Log it.** Write to `memory/YYYY-MM-DD.md`: skill name, source, what it does.
+**When installing from ClawHub:** use `clawhub install` (framework handles the path).
+**When creating custom skills:** put them in `skills/<name>/`.
+**NEVER manually create `.agent/`, `.agents/`, `.claude/skills/`, or any other hidden directories for skills.** Only `clawhub install` may touch those paths. If you don't have `clawhub install`, put skills in `skills/<name>/`.
+
+When the user asks to find or install skills:
+
+1. **Search** — try: `clawhub search "<query>"` → `npx skills find "<query>"` → firecrawl fallback
+2. **Show before install.** Name, description, source. Never auto-install.
+3. **Wait for approval.**
+4. **Install.** Use `clawhub install <skill>` for ClawHub skills. For manual skills, put in `skills/<name>/`.
+5. **Don't overwrite.** If skill exists, tell user.
+6. **Verify.** Confirm SKILL.md exists in the installed location.
+7. **Preview.** One-line summary of what it does.
+8. **Log.** Write to `memory/YYYY-MM-DD.md`.
 
 ### Writing Skills
 

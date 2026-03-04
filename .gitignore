@@ -4,3 +4,7 @@ openclaw.json
 __pycache__/
 *.pyc
 .DS_Store
+.agent/
+.agents/
+.trae/
+.windsurf/
